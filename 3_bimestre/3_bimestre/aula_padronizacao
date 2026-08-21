@@ -1,0 +1,21 @@
+brutos = [
+  "MARIA DA SILVA",
+  "joão.souza@EMAIL.com",
+  RUA DAS FLORES, No 123",
+  "000.111.222.33"
+  "CARLOS.ROCHA@ESCOLA.ORG",
+"av. CENTRAL, no 450
+
+dados_limpos = []
+for item in brutos:
+  texto = item.strip()
+if "@" in texto:
+  texto = texto.lower()
+else:
+  texto = texto.replace ("no", "Numero")
+  texto = texto.replace(".", " ").replace(("-", " ")
+dados_limpos.append(texto)
+
+print("Base de dados tratada e sanitizada")
+for dado in dados_limpos:
+  print("-", dado)
