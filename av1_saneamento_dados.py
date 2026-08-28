@@ -1,0 +1,31 @@
+# ==============================================================================
+# PROVA PRÁTICA AV1 - 3º BIMESTRE
+# ARQUIVO: av1_saneamento_dados.py
+# Nome do Aluno: 
+# Data:
+# ==============================================================================
+# Lista de cadastros brutos recebidos do sistema
+cadastros_brutos = [
+   "  joao da silva;11988887777  ",
+   "  maria sousa;21977776666  ",
+   "  carlos edgardo oliveira;31966665555  ",
+   "  ana paula lima;41955554444  "
+]
+
+print("==================================================")
+print("     SISTEMA DE SANEAMENTO DE DADOS - AV1         ")
+print("==================================================\n")
+
+# TODO: Escreva o laco de repeticao usando for e range() para percorrer a lista
+for i in range(len(cadastros_brutos)):
+    cadastro = cadastros_brutos[i].strip()
+    nome, telefone = cadastro.split(";")
+    nome = nome.upper()
+    ddd = telefone[0:2]
+    print(f"Funcionario: {nome} | DDD: {ddd} | Telefone: {telefone}")
+  
+
+print("\n==================================================")
+print("             PROCESSAMENTO CONCLUÍDO              ")
+print("==================================================")
+
